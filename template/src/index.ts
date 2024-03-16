@@ -1,19 +1,5 @@
-import { truthy } from './module.js';
+import { fetchData } from './module.js';
 
-// A simple function to add two numbers
-export const add = (a: number, b: number): number => {
-  return a + b;
-};
-
-export const isTruthy = () => {
-  return truthy;
-}
-
-// A mock function to simulate fetching data from an API
-export const fetchData = (): Promise<string> => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve('data from api');
-    }, 1000);
-  });
-};
+// Using top-level await to fetch data before proceeding
+const data = await fetchData('https://jsonplaceholder.typicode.com/posts/1');
+console.log(data);

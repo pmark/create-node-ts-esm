@@ -1,6 +1,5 @@
-import { add, fetchData, isTruthy } from '../src/index';
+import { add, fetchData, truthy } from '../src/module';
 
-// Basic testing of the add function
 describe('add', () => {
   it('correctly adds two numbers', () => {
     expect(add(1, 2)).toBe(3);
@@ -8,17 +7,8 @@ describe('add', () => {
   });
 });
 
-// Testing async code
-describe('fetchData', () => {
-  it('fetches data successfully', async () => {
-    const data = await fetchData();
-    expect(data).toBe('data from api');
-  });
-});
-
 describe('isTruthy function', () => {
   it('returns the correct value', () => {
-    const result = isTruthy();
-    expect(result).toBeTruthy();
+    expect(truthy).toBeTruthy();
   });
 });
