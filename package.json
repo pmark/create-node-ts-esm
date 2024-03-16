@@ -1,6 +1,6 @@
 {
   "name": "create-node-ts-esm-jest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sets up a basic ESM NodeJS project with TypeScript, Jest and ESLint. ",
   "main": "./src/cli.js",
   "bin": "./src/cli.js",
