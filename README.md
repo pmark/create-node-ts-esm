@@ -1,6 +1,6 @@
 # create-node-ts-esm-jest
 
-This is a project scaffolding tool that sets up a basic ESM NodeJS project with TypeScript, Jest and ESLint.
+This is a project scaffolding tool that sets up a basic ESM NodeJS project with TypeScript, Jest and ESLint. Includes top-level await and automatic test running.
 
 ## Getting Started
 
