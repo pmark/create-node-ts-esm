@@ -5,7 +5,7 @@ const { copyTemplate } = require('./copy-template.js');
 const run = () => {
     const targetDirName = process.argv[2]; // Get target directory name from command line arguments
     if (!targetDirName) {
-        console.log('Usage: npx create-node-ts-esm <project-directory>');
+        console.log('Usage: npx create-node-ts-esm-jest <project-directory>');
         process.exit(1);
     }
 

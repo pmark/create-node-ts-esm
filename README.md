@@ -1,13 +1,13 @@
-# create-node-ts-esm
+# create-node-ts-esm-jest
 
 This is a project scaffolding tool that sets up a basic ESM NodeJS project with TypeScript, Jest and ESLint.
 
 ## Getting Started
 
-To create a new project using `create-node-ts-esm`, run the following command:
+To create a new project using `create-node-ts-esm-jest`, run the following command:
 
 ```bash
-npx create-node-ts-esm <project-name>
+npx create-node-ts-esm-jest <project-name>
 ```
 
 Replace `<project-name>` with the desired directory name for your new project.

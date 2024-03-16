@@ -1,5 +1,5 @@
 {
-  "name": "create-node-ts-esm",
+  "name": "create-node-ts-esm-jest",
   "version": "1.0.0",
   "description": "Sets up a basic ESM NodeJS project with TypeScript, Jest and ESLint. ",
   "main": "cli.js",
@@ -268,7 +268,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pmark/create-node-ts-esm.git"
+    "url": "git+https://github.com/pmark/create-node-ts-esm-jest.git"
   },
   "keywords": [
     "node",
@@ -287,9 +287,9 @@
   "author": "P. Mark Anderson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pmark/create-node-ts-esm/issues"
+    "url": "https://github.com/pmark/create-node-ts-esm-jest/issues"
   },
-  "homepage": "https://github.com/pmark/create-node-ts-esm#readme",
+  "homepage": "https://github.com/pmark/create-node-ts-esm-jest#readme",
   "devDependencies": {
     "jest": "^29.7.0",
     "mock-fs": "^5.2.0"
