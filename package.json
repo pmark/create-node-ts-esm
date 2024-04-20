@@ -1,11 +1,12 @@
 {
   "name": "create-node-ts-esm-jest",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sets up a basic ESM NodeJS project with TypeScript, Jest and ESLint. ",
   "main": "./src/cli.js",
   "bin": "./src/cli.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier './**/*.{ts,js}' --write"
   },
   "jest": {
     "testMatch": [
@@ -293,6 +294,7 @@
   "homepage": "https://github.com/pmark/create-node-ts-esm-jest#readme",
   "devDependencies": {
     "jest": "^29.7.0",
-    "mock-fs": "^5.2.0"
+    "mock-fs": "^5.2.0",
+    "prettier": "^3.2.5"
   }
 }

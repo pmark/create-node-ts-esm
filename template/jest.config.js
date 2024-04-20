@@ -17,4 +17,3 @@ export default {
   moduleFileExtensions: ['ts', 'js', 'json'],
   testMatch: ['<rootDir>/__tests__/**/*.test.ts'],
 };
-

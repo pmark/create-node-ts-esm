@@ -50,3 +50,4 @@ yarn-error.log*
 .env
 
 template/package-lock.json
+new-project

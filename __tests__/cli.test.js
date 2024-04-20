@@ -1,27 +1,20 @@
 const { copyTemplate } = require('../src/copy-template.js');
 const fs = require('fs');
-const mockFs = require('mock-fs');
+// const mockFs = require('mock-fs');
 
 beforeEach(() => {
-  // Setup a mock file system
-  mockFs({
-    'template': {
-      'file.txt': 'content',
-    },
-  });
+  fs.rmSync('new-project', { recursive: true, force: true });
 });
 
 afterEach(() => {
-  // Restore the file system
-  mockFs.restore();
+  fs.rmSync('new-project', { recursive: true, force: true });
 });
 
 test('copyTemplate copies files correctly', async () => {
-  process.argv = ['node', 'cli.js', 'new-project'];
-
   await copyTemplate('new-project');
 
-  // Assert that the expected file exists in the mock file system
-  const exists = fs.existsSync('new-project/file.txt');
-  expect(exists).toBe(true);
+  // Assert that the expected files exist
+  expect(fs.existsSync('new-project')).toBe(true);
+  expect(fs.existsSync('new-project/package.json')).toBe(true);
+  expect(fs.existsSync('new-project/.prettierrc')).toBe(true);
 });
